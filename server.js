@@ -28,7 +28,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const limiter = rateLimit({
-  windowMs: 24 * 60 * 60 * 1000, 
+  windowMs: 0, 
   max: 2, 
   message: "Too many requests from this IP, please try again after 24 hours",
   handler: (req, res) => {
