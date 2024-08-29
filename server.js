@@ -128,6 +128,6 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-app.get("/test", (req, res) => {
-  res.send("Hello World!");
+app.get("/", (req, res) => {
+  res.send("SERVIDOR DE QUEBIN");
 });
