@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "http://192.168.1.141:3000",
+    origin: "https://kevintcfit.com", 
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   }),
